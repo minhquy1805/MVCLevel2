@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "vAx1VhU3o7EBNT8lf8iAy7booq3yph5GeO2rcbe5zic=",
+  "Source": "DuAnTuyetVoiPart1",
+  "BasePath": "_content/DuAnTuyetVoiPart1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DuAnTuyetVoiPart1\\wwwroot",
+      "Source": "DuAnTuyetVoiPart1",
+      "ContentRoot": "C:\\Users\\minhq\\source\\repos\\DuAnTuyetVoiPart1\\DuAnTuyetVoiPart1\\wwwroot\\",
+      "BasePath": "_content/DuAnTuyetVoiPart1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

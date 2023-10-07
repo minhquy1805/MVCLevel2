@@ -46,7 +46,7 @@ namespace DuAnTuyetVoiPart1.Controllers
         private bool IsValidUser(string username, string password)
         {
             bool isValid = false;
-            string connectionString = "Data Source=127.0.0.1;Initial Catalog=DuAnTuyetVoi;User ID=sa;Password=quypro2003";
+            string connectionString = AppSettings.GetConnectionString();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

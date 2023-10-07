@@ -3,5 +3,44 @@
 *@
 @{
 }
-Bạn đã đăng nhập thành công, đây là trang Admin
+@using DuAnTuyetVoiPart1.Models
+@model List<Book>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<form asp-controller="Admin" asp-action="Index" method="post">
+    <div class="mb-3">
+        <label for="Title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="Title" name="Title" placeholder="Enter your title" required>
+    </div>
+    <div class="mb-3">
+        <label for="Price" class="form-label">Price</label>
+        <input type="text" class="form-control" id="Price" name="Price" placeholder="Enter your price" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Insert</button>
+
+</form>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+
+            <th scope="col">Title</th>
+            <th scope="col">Price</th>
+
+        </tr>
+    </thead>
+    <tbody>
+       @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.Price</td>
+            </tr>
+        } 
+    </tbody>
+</table>
+
 
